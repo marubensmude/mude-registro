@@ -1,0 +1,65 @@
+/* Mude Registro · administração */
+.login{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px}
+.login-caixa{width:100%;max-width:360px;background:var(--grafite);border:1px solid var(--linha);border-top:2px solid var(--dourado);padding:34px 28px;display:flex;flex-direction:column;gap:10px;text-align:center}
+.login-caixa img{width:64px;height:64px;object-fit:contain;margin:0 auto 4px}
+.login-caixa h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:30px;font-weight:500;color:var(--branco)}
+.login-caixa h1 span{color:var(--dourado)}
+.login-caixa>p{font-size:12.5px;color:var(--cinza);margin-bottom:12px}
+.login-caixa label{text-align:left}
+.login-caixa button{margin-top:6px}
+.login-erro{color:var(--vermelho);font-size:12.5px;min-height:18px}
+.voltar{font-size:12px;color:var(--apagado);text-decoration:none}
+.voltar:hover{color:var(--dourado)}
+
+.adm-topo{border-bottom:1px solid var(--linha);background:rgba(11,11,12,.94);position:sticky;top:0;z-index:20;backdrop-filter:blur(6px)}
+.adm-topo-in{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+.adm-topo .marca img{width:44px;height:44px}
+.adm-topo .marca h1{font-size:26px}
+.adm-acoes{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.adm-acoes button{padding:9px 14px}
+.pendente{font-size:12px;color:var(--dourado-claro);border:1px solid rgba(198,160,82,.35);padding:5px 10px;border-radius:20px}
+.adm-info{font-size:12.5px;color:var(--cinza);margin:18px 0 14px}
+.abas{display:flex;gap:2px;overflow-x:auto;border-bottom:1px solid var(--linha);margin-bottom:28px;scrollbar-width:thin}
+.abas button{border:none;border-bottom:2px solid transparent;border-radius:0;color:var(--cinza);font-weight:400;padding:12px 14px;white-space:nowrap;background:none}
+.abas button:hover{background:none!important;color:var(--branco)!important}
+.abas button.ativa{color:var(--dourado);border-bottom-color:var(--dourado)}
+.nota{font-size:12.5px;color:var(--cinza);margin:-6px 0 14px;line-height:1.5}
+.nota b{color:var(--cinza-claro);font-weight:500}
+.linha-bt{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.linha-bt button,.botao-arquivo{padding:9px 14px}
+.botao-arquivo{display:inline-flex;align-items:center;border:1px solid var(--linha);color:var(--cinza);font-size:12px;font-weight:500;border-radius:3px;cursor:pointer}
+.botao-arquivo:hover{background:var(--linha);color:var(--branco)}
+.botao-arquivo input{display:none}
+
+/* listas editáveis */
+.item-lista{display:grid;gap:10px;align-items:end;background:var(--grafite);border:1px solid var(--linha);padding:12px 14px;margin-bottom:8px}
+.item-lista .campo label{font-size:11.5px}
+.item-lista input,.item-lista select{padding:8px 10px;font-size:14px}
+.item-lista .chk{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--cinza);padding-bottom:9px;white-space:nowrap}
+.item-lista .chk input{accent-color:var(--dourado);width:15px;height:15px}
+.g-acr{grid-template-columns:1fr 140px auto}
+.g-red{grid-template-columns:1fr 110px auto auto}
+.g-ext{grid-template-columns:1.2fr 130px 1.6fr auto auto}
+.g-cor{grid-template-columns:1.4fr 1fr 1fr auto}
+@media(max-width:760px){.g-acr,.g-red,.g-ext,.g-cor{grid-template-columns:1fr 1fr}}
+.remover{border-color:#3A2622;color:var(--vermelho);padding:8px 10px;font-size:12px}
+.remover:hover{background:var(--vermelho)!important;color:var(--preto)!important}
+
+/* editor de tabela por faixas */
+.et-ferr{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+.et-ferr .et-reaj{display:flex;gap:6px;align-items:center}
+.et-ferr .et-reaj input{width:90px;padding:8px 10px;font-size:13px}
+.et-tab{max-height:460px;overflow:auto;border:1px solid var(--linha);background:var(--grafite)}
+.et-tab table{font-size:13px}
+.et-tab th,.et-tab td{padding:4px 10px}
+.et-tab th{padding-top:9px;padding-bottom:9px}
+.et-tab td input{background:transparent;border:1px solid transparent;padding:5px 7px;font-size:13px;text-align:right;width:140px}
+.et-tab td input:hover{border-color:var(--linha)}
+.et-tab td input:focus{border-color:var(--dourado);background:var(--preto)}
+.et-tab td.faixa{color:var(--apagado);font-size:12px;text-align:left}
+.et-tab td .x{border:none;color:var(--apagado);padding:4px 8px;font-size:14px;background:none}
+.et-tab td .x:hover{color:var(--vermelho)!important;background:none!important}
+.et-tab tr.erro td{background:rgba(210,122,106,.12)}
+.et-colar{margin-top:10px}
+.et-colar textarea{font-family:ui-monospace,Menlo,monospace;font-size:12.5px}
+.et-colar .linha-bt{margin-top:8px}

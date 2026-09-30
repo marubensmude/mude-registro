@@ -1,0 +1,670 @@
+{
+ "versao": 1,
+ "atualizadoEm": "2026-09-30T12:00:00-04:00",
+ "atualizadoPor": "Mário Rubens Ferraz de Paula",
+ "empresa": {
+  "nome": "Mude Imóveis",
+  "razao": "MRM Negócios e Consultorias Imobiliárias Ltda.",
+  "creci": "CRECI-J 6052",
+  "cnpj": "17.400.640/0001-91",
+  "endereco": "Rua Oliveira Marques, 1710, Centro, Dourados/MS, CEP 79805-021",
+  "telefone": "(67) 99202-2923",
+  "whatsapp": "5567992022923",
+  "email": "mario@mudeimobiliaria.com.br",
+  "site": "imoveismude.com.br",
+  "slogan": "Mude que a Gente te Acompanha."
+ },
+ "itbi": {
+  "municipio": "Dourados/MS",
+  "aliquota": 2,
+  "base": "maior",
+  "fonte": "Alíquota do ITBI de Dourados/MS aplicada sobre a base de cálculo configurada."
+ },
+ "registro": {
+  "fonte": "Tabela de Emolumentos 2026 do Registro de Imóveis de Mato Grosso do Sul · Lei Estadual nº 6.183/2023 · Provimento nº 327/2024",
+  "vigencia": "01/01/2026",
+  "base": "maior",
+  "selo": 27.21,
+  "acrescimos": [
+   {
+    "nome": "FUNJECC",
+    "pct": 10
+   },
+   {
+    "nome": "FUNADEP",
+    "pct": 10
+   },
+   {
+    "nome": "FEADMP",
+    "pct": 10
+   },
+   {
+    "nome": "ISS",
+    "pct": 5
+   }
+  ],
+  "tabC": [
+   [
+    5000,
+    85.31
+   ],
+   [
+    10000,
+    171.76
+   ],
+   [
+    15000,
+    257.06
+   ],
+   [
+    20000,
+    343.41
+   ],
+   [
+    25000,
+    427.57
+   ],
+   [
+    30000,
+    512.76
+   ],
+   [
+    35000,
+    599.23
+   ],
+   [
+    40000,
+    684.53
+   ],
+   [
+    45000,
+    770.98
+   ],
+   [
+    50000,
+    856.19
+   ],
+   [
+    55000,
+    1027.94
+   ],
+   [
+    60000,
+    1113.15
+   ],
+   [
+    65000,
+    1199.6
+   ],
+   [
+    70000,
+    1283.76
+   ],
+   [
+    75000,
+    1368.95
+   ],
+   [
+    80000,
+    1454.26
+   ],
+   [
+    85000,
+    1540.72
+   ],
+   [
+    90000,
+    1625.91
+   ],
+   [
+    95000,
+    1712.31
+   ],
+   [
+    100000,
+    1882.87
+   ],
+   [
+    110000,
+    1967.26
+   ],
+   [
+    120000,
+    2053.48
+   ],
+   [
+    130000,
+    2138.69
+   ],
+   [
+    140000,
+    2223.98
+   ],
+   [
+    150000,
+    2309.18
+   ],
+   [
+    160000,
+    2380.23
+   ],
+   [
+    170000,
+    2451.28
+   ],
+   [
+    180000,
+    2522.33
+   ],
+   [
+    190000,
+    2593.4
+   ],
+   [
+    200000,
+    2664.45
+   ],
+   [
+    210000,
+    2733.19
+   ],
+   [
+    220000,
+    2801.83
+   ],
+   [
+    230000,
+    2870.58
+   ],
+   [
+    240000,
+    2939.22
+   ],
+   [
+    250000,
+    3007.86
+   ],
+   [
+    260000,
+    3133.4
+   ],
+   [
+    270000,
+    3258.95
+   ],
+   [
+    280000,
+    3384.5
+   ],
+   [
+    290000,
+    3510.04
+   ],
+   [
+    300000,
+    3635.48
+   ],
+   [
+    325000,
+    3695.95
+   ],
+   [
+    350000,
+    3756.32
+   ],
+   [
+    375000,
+    3816.67
+   ],
+   [
+    400000,
+    3877.14
+   ],
+   [
+    425000,
+    3937.53
+   ],
+   [
+    450000,
+    3997.87
+   ],
+   [
+    475000,
+    4058.34
+   ],
+   [
+    500000,
+    4118.7
+   ],
+   [
+    600000,
+    4179.06
+   ],
+   [
+    700000,
+    4239.43
+   ],
+   [
+    800000,
+    4299.89
+   ],
+   [
+    900000,
+    4360.25
+   ],
+   [
+    1000000,
+    4420.62
+   ],
+   [
+    2000000,
+    4727.04
+   ],
+   [
+    3000000,
+    5093.83
+   ],
+   [
+    4000000,
+    5460.62
+   ],
+   [
+    5000000,
+    5827.4
+   ],
+   [
+    7000000,
+    6194.19
+   ],
+   [
+    9000000,
+    6560.97
+   ],
+   [
+    null,
+    6927.76
+   ]
+  ],
+  "tabB": [
+   [
+    5000,
+    59.71
+   ],
+   [
+    10000,
+    120.23
+   ],
+   [
+    15000,
+    179.94
+   ],
+   [
+    20000,
+    240.39
+   ],
+   [
+    25000,
+    299.3
+   ],
+   [
+    30000,
+    358.94
+   ],
+   [
+    35000,
+    419.46
+   ],
+   [
+    40000,
+    479.17
+   ],
+   [
+    45000,
+    539.69
+   ],
+   [
+    50000,
+    599.33
+   ],
+   [
+    55000,
+    719.56
+   ],
+   [
+    60000,
+    779.2
+   ],
+   [
+    65000,
+    839.72
+   ],
+   [
+    70000,
+    898.62
+   ],
+   [
+    75000,
+    958.26
+   ],
+   [
+    80000,
+    1017.98
+   ],
+   [
+    85000,
+    1078.5
+   ],
+   [
+    90000,
+    1138.14
+   ],
+   [
+    95000,
+    1198.66
+   ],
+   [
+    100000,
+    1318.01
+   ],
+   [
+    110000,
+    1377.72
+   ],
+   [
+    120000,
+    1437.43
+   ],
+   [
+    130000,
+    1497.07
+   ],
+   [
+    140000,
+    1556.78
+   ],
+   [
+    150000,
+    1616.42
+   ],
+   [
+    160000,
+    1666.17
+   ],
+   [
+    170000,
+    1715.9
+   ],
+   [
+    180000,
+    1765.64
+   ],
+   [
+    190000,
+    1815.37
+   ],
+   [
+    200000,
+    1865.11
+   ],
+   [
+    210000,
+    1913.23
+   ],
+   [
+    220000,
+    1961.24
+   ],
+   [
+    230000,
+    2009.41
+   ],
+   [
+    240000,
+    2057.45
+   ],
+   [
+    250000,
+    2105.5
+   ],
+   [
+    260000,
+    2193.38
+   ],
+   [
+    270000,
+    2281.27
+   ],
+   [
+    280000,
+    2369.15
+   ],
+   [
+    290000,
+    2457.03
+   ],
+   [
+    300000,
+    2544.84
+   ],
+   [
+    325000,
+    2587.16
+   ],
+   [
+    350000,
+    2629.42
+   ],
+   [
+    375000,
+    2671.67
+   ],
+   [
+    400000,
+    2714.0
+   ],
+   [
+    425000,
+    2756.25
+   ],
+   [
+    450000,
+    2798.5
+   ],
+   [
+    475000,
+    2840.84
+   ],
+   [
+    500000,
+    2883.09
+   ],
+   [
+    600000,
+    2925.35
+   ],
+   [
+    700000,
+    2967.6
+   ],
+   [
+    800000,
+    3009.52
+   ],
+   [
+    900000,
+    3052.18
+   ],
+   [
+    1000000,
+    3094.43
+   ],
+   [
+    2000000,
+    3136.76
+   ],
+   [
+    3000000,
+    3179.01
+   ],
+   [
+    4000000,
+    3221.26
+   ],
+   [
+    5000000,
+    3263.59
+   ],
+   [
+    7000000,
+    3305.84
+   ],
+   [
+    9000000,
+    3348.1
+   ],
+   [
+    null,
+    3398.64
+   ]
+  ],
+  "abertura": 46.11,
+  "certidao": 57.57
+ },
+ "escritura": {
+  "rotulo": "Cartório Cristalina · tabela 2025",
+  "base": "maior",
+  "tab": [
+   [
+    5000,
+    106.58
+   ],
+   [
+    10000,
+    214.64
+   ],
+   [
+    15000,
+    321.22
+   ],
+   [
+    20000,
+    429.28
+   ],
+   [
+    25000,
+    534.38
+   ],
+   [
+    30000,
+    640.96
+   ],
+   [
+    35000,
+    749.02
+   ],
+   [
+    40000,
+    855.6
+   ],
+   [
+    45000,
+    963.66
+   ],
+   [
+    50000,
+    1070.24
+   ],
+   [
+    60000,
+    1284.88
+   ],
+   [
+    70000,
+    1499.52
+   ],
+   [
+    80000,
+    1711.2
+   ],
+   [
+    90000,
+    1925.84
+   ],
+   [
+    100000,
+    2140.48
+   ],
+   [
+    150000,
+    2566.8
+   ],
+   [
+    200000,
+    2996.08
+   ],
+   [
+    250000,
+    3423.88
+   ],
+   [
+    300000,
+    3851.68
+   ],
+   [
+    null,
+    4707.27
+   ]
+  ],
+  "obs": "Valores da tabela de escrituração informada pelo tabelionato."
+ },
+ "reducoes": [
+  {
+   "id": "sfh",
+   "nome": "Primeira aquisição residencial financiada pelo SFH",
+   "pct": 50,
+   "dispensaCertidao": true
+  },
+  {
+   "id": "mcmv",
+   "nome": "Demais empreendimentos do PMCMV",
+   "pct": 50,
+   "dispensaCertidao": false
+  },
+  {
+   "id": "far",
+   "nome": "PMCMV, empreendimentos FAR e FDS",
+   "pct": 75,
+   "dispensaCertidao": false
+  },
+  {
+   "id": "pop",
+   "nome": "Habitação popular, mutirão e autoconstrução",
+   "pct": 20,
+   "dispensaCertidao": false
+  }
+ ],
+ "extras": [],
+ "corretores": [
+  {
+   "nome": "Mário Rubens Ferraz de Paula",
+   "creci": "CRECI/MS 5710",
+   "telefone": "(67) 99202-2923"
+  }
+ ],
+ "textos": {
+  "validadeDias": 30,
+  "aviso": "Este documento é uma simulação de caráter consultivo, elaborada pela Mude Imóveis a partir das tabelas oficiais vigentes na data de emissão e dos valores informados. Não constitui orçamento de cartório, guia de recolhimento, laudo ou compromisso formal da Mude Imóveis. Os valores de ITBI, escritura e registro devem ser confirmados junto à Prefeitura de Dourados, ao tabelionato e ao Registro de Imóveis competentes antes da assinatura, podendo variar em razão de exigências, averbações adicionais, certidões, atualização de tabelas ou do valor de avaliação fiscal.",
+  "observacaoPadrao": ""
+ },
+ "admin": {
+  "salt": "903daa13c21afe57c49533d1972548d9",
+  "iter": 150000,
+  "hash": "a4ad11b613b0608ec5a44c3a2cf19c2ba64f8e47419b81db2f51a826370db9ff"
+ },
+ "github": {
+  "owner": "marubensmude",
+  "repo": "mude-registro",
+  "branch": "main",
+  "path": "dados.json"
+ }
+}
