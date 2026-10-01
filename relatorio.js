@@ -88,7 +88,7 @@
       R.fr < 1 ? ['Fração adquirida', dec(R.fr * 100, 0, 4) + '%'] : null,
       ['Crédito financiado', R.vF > 0 ? brl(R.vF) : 'Aquisição sem financiamento'],
       ['Enquadramento legal', R.red ? R.red.nome + ' · redução de ' + pct(R.red.pct) + ' nos emolumentos' : 'Sem redução'],
-      ['Base de cálculo do ITBI', brl(R.baseITBI) + ' (' + nomeBase(D.itbi.base) + ')'],
+      ['Base de cálculo do ITBI', brl(R.baseITBI) + ' (' + (D.itbi.base === 'avaliado' && !(R.vA > 0) ? 'estimada pelo valor da transação, pois a avaliação da Prefeitura não foi informada' : nomeBase(D.itbi.base)) + ')'],
       ['Base da escritura', brl(R.baseEsc) + ' (' + nomeBase(D.escritura.base) + ')'],
       ['Base do registro', brl(R.baseReg) + ' (' + nomeBase(D.registro.base) + ')']
     ]);
@@ -100,7 +100,8 @@
       i.grupo, i.detalhe, i.off ? 'Dispensada' : brl(i.valor)
     ]);
     const pe = [];
-    if (R.economia > 0.01) pe.push([{ content: 'Economia obtida com a redução legal', colSpan: 3 }, '- ' + brl(R.economia)]);
+    if (R.descontoEsc > 0.01) pe.push([{ content: 'Desconto negociado na escritura (já aplicado no valor acima)', colSpan: 3 }, '- ' + brl(R.descontoEsc)]);
+    if (R.economia > 0.01) pe.push([{ content: 'Economia obtida com a redução legal (já aplicada)', colSpan: 3 }, '- ' + brl(R.economia)]);
     pe.push([{ content: 'TOTAL ESTIMADO', colSpan: 3 }, brl(R.total)]);
     doc.autoTable({
       startY: y, margin: { left: M, right: M, bottom: RODAPE + 4 }, theme: 'plain',
@@ -188,7 +189,7 @@
     tabelaChaveValor([
       ['Registro de Imóveis', D.registro.fonte + ' · vigência ' + D.registro.vigencia],
       ['Acréscimos legais', (D.registro.acrescimos || []).map(a => a.nome + ' ' + pct(a.pct)).join(', ') + ' sobre os emolumentos, mais selo de ' + brl(D.registro.selo) + ' por ato'],
-      ['Escritura pública', D.escritura.rotulo],
+      ['Escritura pública', 'Tabela de referência: ' + D.escritura.rotulo + (S.escCartorio ? ' · condição informada por ' + S.escCartorio : '')],
       ['ITBI', 'Alíquota de ' + pct(D.itbi.aliquota) + ' · ' + D.itbi.municipio],
       ['Atualização das tabelas', dataBR(D.atualizadoEm)]
     ]);
